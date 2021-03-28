@@ -1,0 +1,19 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.Available-days {
+  background: greenyellow;
+  border-radius: 100%;
+}
+.few-shifts{
+    background: orange;
+    border-radius: 100%;
+}
+.not-available{
+    background: red;
+    border-radius: 100%;
+}

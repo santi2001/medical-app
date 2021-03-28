@@ -15,7 +15,7 @@ export class NavBarComponent implements OnInit, OnDestroy {
   ngOnInit(): void {}
   private _mobileQueryListener: () => void
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
-    this.mobileQuery = media.matchMedia('(max-width: 30vw)')
+    this.mobileQuery = media.matchMedia('(max-width: 1000px)')
     this._mobileQueryListener = () => changeDetectorRef.detectChanges()
     this.mobileQuery.addListener(this._mobileQueryListener)
   }

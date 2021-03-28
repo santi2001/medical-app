@@ -3,7 +3,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
-
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 //angular Material
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -57,13 +57,19 @@ import {OverlayModule} from '@angular/cdk/overlay';
 import { NavBarComponent } from './components/ui/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/ui/footer/footer.component';
 import { TurnosComponent } from './components/turnos/turnos.component';
+import { LoginComponent } from './components/login/login.component';
+import { AltaTurnoComponent } from './components/alta-turno/alta-turno.component';
+import { FormPacienteComponent } from './components/form-paciente/form-paciente.component';
 @NgModule({
   declarations: [
     AppComponent,
     PacientesComponent,
     NavBarComponent,
     FooterComponent,
-    TurnosComponent
+    TurnosComponent,
+    LoginComponent,
+    AltaTurnoComponent,
+    FormPacienteComponent
   ],
   imports: [
     A11yModule,
@@ -113,7 +119,9 @@ import { TurnosComponent } from './components/turnos/turnos.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

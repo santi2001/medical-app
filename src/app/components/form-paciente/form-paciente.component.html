@@ -1,1 +1,45 @@
-<p>form-paciente works!</p>
+<mat-card>
+  <mat-card-content class="form">
+      <h1>Crear Paciente </h1>
+    <form>
+      <div class="form-input">
+        <label> firstname</label>
+        <mat-form-field>
+          <input matInput placeholder="insert firstname" autocomplete="off" />
+        </mat-form-field>
+      </div>
+      <div class="form-input">
+        <label> sunname</label>
+        <mat-form-field>
+          <input matInput placeholder="insert sunname" autocomplete="off" />
+        </mat-form-field>
+      </div>
+      <div class="form-input">
+        <label style="margin-right: 62px;"> dni</label>
+        <mat-form-field>
+          <input
+            type="number"
+            matInput
+            placeholder="insert dni"
+            autocomplete="off"
+          />
+        </mat-form-field>
+      </div>
+      <div class="form-input">
+        <label style="margin-right: 28px;"> telefono</label>
+        <mat-form-field>
+          <input matInput placeholder="insert phone" autocomplete="off" />
+        </mat-form-field>
+      </div>
+      <div class="form-input">
+        <label> Direccion</label>
+        <mat-form-field>
+          <input matInput placeholder="insert Address" autocomplete="off" />
+        </mat-form-field>
+      </div>
+      <div>
+        <button mat-raised-button color="primary" class="button">save</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

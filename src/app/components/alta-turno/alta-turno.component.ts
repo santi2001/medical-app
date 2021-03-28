@@ -32,9 +32,9 @@ export class AltaTurnoComponent implements OnInit {
 
         let dayturno = this.fechas.find(({ day }) => day == date) // esto nos ayudara a indicarle al usuario cual dia se encuentra disponible
         if (dayturno) { // leer es importante !!!!!!!!!!!!!!!!!!
-          switch (dayturno.turnosdisponibles) {
+          switch (dayturno.turnosdisponibles) { 
             case 'disponible':
-              return 'Available-days'
+              return 'Available-days' // son clases de css. elegi los colores. soy malisimo para eso.
             case 'no disponible':
               return 'not-available'
             case 'casi lleno':
